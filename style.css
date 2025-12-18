@@ -25,6 +25,8 @@ body {
 }
 
 .overlay {
+  position: relative;
+  z-index: 2;
   background: rgba(139, 30, 30, 0.75);
   height: 100%;
   color: white;
@@ -35,6 +37,7 @@ body {
   text-align: center;
   padding: 20px;
 }
+
 
 .overlay h1 {
   font-family: 'Playfair Display', serif;
@@ -96,7 +99,19 @@ body {
   left: -100%;
   background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
   animation: sparkle 20s linear infinite;
+  pointer-events: none;
+  z-index: 1;
 }
+
+
+.hero-btns {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 
 /* ---------------------------
    ABOUT, GALLERY, CONTACT
