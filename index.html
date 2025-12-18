@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lèvres Sucrées Bakehouse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay">
+    <h1>Lèvres Sucrées Bakehouse</h1>
+    <p>Cakes & Confections to satisfy your cravings</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/2349034833383" target="_blank" class="btn">Order on WhatsApp</a>
+      <a href="https://instagram.com/_levressucrees" target="_blank" class="btn outline">Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <h2>We Specialize In</h2>
+  <p>
+    Crafting delicate cakes & desserts for all kinds of events.
+    From birthdays to weddings, small chops to curated gift packages,
+    we deliver sweetness with excellence.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="service">🎂 Birthday Cakes</div>
+  <div class="service">💍 Wedding Cakes</div>
+  <div class="service">🧁 Desserts & Pastries</div>
+  <div class="service">🍹 Cocktails & Mocktails</div>
+  <div class="service">🎁 Gift Packages</div>
+  <div class="service">🍱 Food Trays & Event Setup</div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <h2>Sample View</h2>
+  <div class="gallery-grid">
+    <img src="images/cake1.jpg" alt="">
+    <img src="images/cake2.jpg" alt="">
+    <img src="images/cake3.jpg" alt="">
+    <img src="images/cake4.jpg" alt="">
+    <img src="images/cake5.jpg" alt="">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Place an Order</h2>
+  <p>We’d love to make your event sweet 🍰</p>
+  <div class="contact-btns">
+    <a href="https://wa.me/2349034833383" target="_blank" class="btn">Chat on WhatsApp</a>
+    <a href="mailto:levressucrees15@gmail.com" class="btn outline">Send Email</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>📍 Lagos, Nigeria</p>
+  <p>© 2025 Lèvres Sucrées Bakehouse</p>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/2349034833383" class="whatsapp-float" target="_blank">💬</a>
+
+<!-- Optional JS for fade-in -->
+<script>
+const sections = document.querySelectorAll('section');
+
+window.addEventListener('scroll', () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      sec.style.opacity = 1;
+      sec.style.transform = 'translateY(0)';
+    }
+  });
+});
+</script>
+
+</body>
+</html>
